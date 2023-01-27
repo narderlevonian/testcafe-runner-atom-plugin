@@ -1,0 +1,41 @@
+{
+    "name": "testcafe-runner-atom-plugin-atom-plugin",
+    "main": "./lib/testcafe-runner-atom-plugin-atom-plugin",
+    "version": "0.7.1",
+    "license": "MIT",
+    "description": "A plug-in for the Atom text editor which runs TestCafe tests (pre-installation required)",
+    "repository": "https://github.com/narderlevonian/testcafe-atom",
+    "author": "Nar der Levonian",
+    "keywords": [
+        "TestCafe",
+        "test",
+        "runner",
+        "Atom",
+        "DevExpress"
+    ],
+    "activationCommands": {
+        "atom-workspace": [
+            "testcafe-runner-atom-plugin:toggle",
+            "testcafe-runner-atom-plugin:runIt"
+        ]
+    },
+    "activationEvents": [
+        "onLanguage:javascript",
+        "onLanguage:typescript"
+    ],
+    "engines": {
+        "atom": ">=1.0.0 <2.0.0"
+    },
+    "dependencies": {
+        "colors": "^1.3.3",
+        "process": "^0.11.10",
+        "xterm": "^3.14.5",
+        "xterm-addon-fit": "^0.1.0",
+        "xterm-addon-web-links": "^0.1.0"
+    },
+    "devDependencies": {
+        "typescript": "^2.0.3",
+        "testcafe": "^1.3.3",
+        "testcafe-browser-tools": "^1.6.5"
+    }
+}

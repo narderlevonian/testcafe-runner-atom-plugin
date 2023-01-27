@@ -1,0 +1,21 @@
+{
+    "context-menu": {
+        "atom-text-editor": [{
+            "label": "Run TestCafe",
+            "command": "testcafe-runner-atom-plugin:runIt"
+        }]
+    },
+    "menu": [{
+        "label": "Packages",
+        "submenu": [{
+            "label": "TestCafe",
+            "submenu": [{
+                "label": "Run it",
+                "command": "testcafe-runner-atom-plugin:runIt"
+            }, {
+                "label": "Restore panel",
+                "command": "testcafe-runner-atom-plugin:toggle"
+            }]
+        }]
+    }]
+}

@@ -1,0 +1,40 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+@import './xterm.css';
+
+.testcafe-runner-atom-plugin-view {
+    font-family: 'PT Mono', 'Mononoki', 'Consolas', 'Ubuntu Mono', monospace;
+    overflow: scroll;
+    max-height: 400px;
+    padding: 8px;
+}
+
+.testcafe-message {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: transparent;
+}
+
+.testcafe-runner-atom-plugin-view-close-button {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 2px;
+    cursor: pointer;
+    font-size: 11px;
+    z-index: 2000;
+}
+
+.testcafe-runner-atom-plugin-view-close-button::after {
+    content: 'Close';
+}
+
+.testcafe-runner-atom-plugin-terminal {
+    overflow: scroll;
+    max-height: 400px;
+}
